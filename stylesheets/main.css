@@ -1,0 +1,81 @@
+/* line 1, ../sass/base/_base.scss */
+a, a:hover, a:active, a:hover {
+  outline: 0;
+  text-decoration: none;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 1, ../sass/module/_header.scss */
+.tophead {
+  background-color: black;
+  padding: 20px 0px;
+  font-size: 20px;
+  color: white;
+  opacity: 0.6;
+}
+
+/* line 9, ../sass/module/_header.scss */
+.tophead:before {
+  background: url("https://pre00.deviantart.net/a739/th/pre/f/2014/068/8/f/black_swirl_carpet__seamless__by_marlborolt-d79jp4v.jpg");
+  background-attactment: fixed;
+  z-index: 1;
+  content: ' ';
+}
+
+@media screen and (max-width: 990px) {
+  /* line 18, ../sass/module/_header.scss */
+  .text-left {
+    text-align: center !important;
+  }
+
+  /* line 21, ../sass/module/_header.scss */
+  .text-right {
+    text-align: center !important;
+    padding: 15px 0px 0px 0px !important;
+  }
+}
+/* line 1, ../sass/module/_navbar.scss */
+.navbar {
+  border-radius: 0px !important;
+  background-color: #191919 !important;
+  border-bottom: 1px solid #d8c58b !important;
+}
+/* line 5, ../sass/module/_navbar.scss */
+.navbar ul a:hover, .navbar ul a:active, .navbar ul a:focus {
+  color: #d8c58b !important;
+  text-shadow: 0px 0px 15px #d8c58b;
+}
+
+/* line 13, ../sass/module/_navbar.scss */
+.navbar-header {
+  margin-left: 15px;
+}
+/* line 15, ../sass/module/_navbar.scss */
+.navbar-header a:hover, .navbar-header a:active, .navbar-header a:focus {
+  color: #d8c58b !important;
+  text-shadow: 0px 0px 15px #d8c58b;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 24, ../sass/module/_navbar.scss */
+  .navbar ul a:hover, .navbar ul a:active, .navbar ul a:focus {
+    border: 0px;
+  }
+
+  /* line 29, ../sass/module/_navbar.scss */
+  .navbar-header {
+    margin-left: 0px;
+  }
+  /* line 31, ../sass/module/_navbar.scss */
+  .navbar-header a:hover, .navbar-header a:active, .navbar-header a:focus {
+    color: #d8c58b !important;
+  }
+}
+/* line 1, ../sass/module/_hero.scss */
+.hero {
+  background: url("https://i.ytimg.com/vi/09pDca1mITM/maxresdefault.jpg");
+  background-size: cover;
+  height: 85vh;
+  margin-top: -20px;
+}

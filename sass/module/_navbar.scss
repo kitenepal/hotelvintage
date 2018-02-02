@@ -1,0 +1,36 @@
+.navbar{
+	border-radius: 0px !important;
+	background-color:  $primary-color !important;
+	ul{
+		a:hover, a:active, a:focus{
+			color: $secondary-color !important;
+			text-shadow: 0px 0px 15px $secondary-color;
+		}
+	}
+	border-bottom: 1px solid $secondary-color !important;
+}
+
+.navbar-header{
+	margin-left: 15px;
+	a:hover, a:active, a:focus{
+		color: $secondary-color !important;
+		text-shadow: 0px 0px 15px $secondary-color;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.navbar{
+		ul{
+			a:hover, a:active, a:focus{
+				border: 0px;
+			}
+		}
+	}
+	.navbar-header{
+		margin-left: 0px;
+		a:hover, a:active, a:focus{
+			color: $secondary-color !important;
+		}
+	}
+}
+
