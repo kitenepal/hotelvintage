@@ -72,5 +72,16 @@
 .tab-panel {
   border-top: 1px solid #ccc;
 }
+@media screen and (max-width: 990px) {
+  .tabset > label {
+    padding: 15px 5px 20px;
+  }
 
+}
 
+@media screen and (max-width: 715px) {
+  .tabset > label {
+    font-size: .8em;
+  }
+  
+}

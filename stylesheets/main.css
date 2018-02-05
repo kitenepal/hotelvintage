@@ -165,3 +165,16 @@ a, a:hover, a:active, a:hover {
 .tab-panel {
   border-top: 1px solid #ccc;
 }
+
+@media screen and (max-width: 990px) {
+  /* line 76, ../sass/module/_room.scss */
+  .tabset > label {
+    padding: 15px 5px 20px;
+  }
+}
+@media screen and (max-width: 715px) {
+  /* line 83, ../sass/module/_room.scss */
+  .tabset > label {
+    font-size: .8em;
+  }
+}
