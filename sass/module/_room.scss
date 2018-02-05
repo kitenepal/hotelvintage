@@ -1,5 +1,6 @@
 .rooms{
-  margin-top: 40px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .room-info{
@@ -15,6 +16,8 @@
 
 .tabset .tab-panel {
   display: none;
+  background: #d8c58b;
+  padding-bottom: 20px;
 }
 
 .tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
@@ -38,6 +41,8 @@
   border-bottom: 0;
   cursor: pointer;
   font-weight: 600;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .tabset > label::after {
@@ -52,13 +57,13 @@
 
 .tabset > label:hover,
 .tabset > input:focus + label {
-  color: #06c;
+  color: #d8c58b;
 }
 
 .tabset > label:hover::after,
 .tabset > input:focus + label::after,
 .tabset > input:checked + label::after {
-  background: #06c;
+  background: #d8c58b;
 }
 
 .tabset > input:checked + label {
@@ -76,12 +81,18 @@
   .tabset > label {
     padding: 15px 5px 20px;
   }
-
 }
 
 @media screen and (max-width: 715px) {
   .tabset > label {
     font-size: .8em;
   }
-  
+}
+@media screen and (max-width: 590px) {
+  .tabset > label::after {
+    left: 9px;
+  }
+  .tabset > label {
+    font-size: 1em;
+  }
 }

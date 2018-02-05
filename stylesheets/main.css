@@ -184,10 +184,11 @@ a, a:hover, a:active, a:hover {
 
 /* line 1, ../sass/module/_room.scss */
 .rooms {
-  margin-top: 40px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
-/* line 5, ../sass/module/_room.scss */
+/* line 6, ../sass/module/_room.scss */
 .room-info {
   margin-top: 20px;
 }
@@ -195,18 +196,20 @@ a, a:hover, a:active, a:hover {
 /*
  CSS for the main interaction
 */
-/* line 11, ../sass/module/_room.scss */
+/* line 12, ../sass/module/_room.scss */
 .tabset > input[type="radio"] {
   position: absolute;
   left: -200vw;
 }
 
-/* line 16, ../sass/module/_room.scss */
+/* line 17, ../sass/module/_room.scss */
 .tabset .tab-panel {
   display: none;
+  background: #d8c58b;
+  padding-bottom: 20px;
 }
 
-/* line 20, ../sass/module/_room.scss */
+/* line 23, ../sass/module/_room.scss */
 .tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
 .tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
 .tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
@@ -219,7 +222,7 @@ a, a:hover, a:active, a:hover {
 /*
  Styling
 */
-/* line 33, ../sass/module/_room.scss */
+/* line 36, ../sass/module/_room.scss */
 .tabset > label {
   position: relative;
   display: inline-block;
@@ -228,9 +231,11 @@ a, a:hover, a:active, a:hover {
   border-bottom: 0;
   cursor: pointer;
   font-weight: 600;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
-/* line 43, ../sass/module/_room.scss */
+/* line 48, ../sass/module/_room.scss */
 .tabset > label::after {
   content: "";
   position: absolute;
@@ -241,34 +246,58 @@ a, a:hover, a:active, a:hover {
   background: #8d8d8d;
 }
 
-/* line 53, ../sass/module/_room.scss */
+/* line 58, ../sass/module/_room.scss */
 .tabset > label:hover,
 .tabset > input:focus + label {
-  color: #06c;
+  color: #d8c58b;
 }
 
-/* line 58, ../sass/module/_room.scss */
+/* line 63, ../sass/module/_room.scss */
 .tabset > label:hover::after,
 .tabset > input:focus + label::after,
 .tabset > input:checked + label::after {
-  background: #06c;
+  background: #d8c58b;
 }
 
-/* line 64, ../sass/module/_room.scss */
+/* line 69, ../sass/module/_room.scss */
 .tabset > input:checked + label {
   border-color: #ccc;
   border-bottom: 1px solid #fff;
   margin-bottom: -1px;
 }
 
-/* line 69, ../sass/module/_room.scss */
+/* line 74, ../sass/module/_room.scss */
 .tab-panel {
   margin-top: -5px;
 }
 
-/* line 72, ../sass/module/_room.scss */
+/* line 77, ../sass/module/_room.scss */
 .tab-panel {
   border-top: 1px solid #ccc;
+}
+
+@media screen and (max-width: 990px) {
+  /* line 81, ../sass/module/_room.scss */
+  .tabset > label {
+    padding: 15px 5px 20px;
+  }
+}
+@media screen and (max-width: 715px) {
+  /* line 87, ../sass/module/_room.scss */
+  .tabset > label {
+    font-size: .8em;
+  }
+}
+@media screen and (max-width: 590px) {
+  /* line 92, ../sass/module/_room.scss */
+  .tabset > label::after {
+    left: 9px;
+  }
+
+  /* line 95, ../sass/module/_room.scss */
+  .tabset > label {
+    font-size: 1em;
+  }
 }
 /* line 1, ../sass/module/_service.scss */
 .service {
@@ -285,16 +314,4 @@ a, a:hover, a:active, a:hover {
 /* line 9, ../sass/module/_service.scss */
 .service--box i {
   font-size: 48px;
-}
-@media screen and (max-width: 990px) {
-  /* line 76, ../sass/module/_room.scss */
-  .tabset > label {
-    padding: 15px 5px 20px;
-  }
-}
-@media screen and (max-width: 715px) {
-  /* line 83, ../sass/module/_room.scss */
-  .tabset > label {
-    font-size: .8em;
-  }
 }
