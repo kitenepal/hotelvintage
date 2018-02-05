@@ -1,17 +1,9 @@
 .tophead{
-	background-color: black;
+	background: url('https://pre00.deviantart.net/a739/th/pre/f/2014/068/8/f/black_swirl_carpet__seamless__by_marlborolt-d79jp4v.jpg');
+	background-attactment: fixed;
 	padding: 20px 0px;
 	font-size: 20px;
 	color: white;
-	opacity: 0.6;
-}
-
-.tophead:before{
-	background: url('https://pre00.deviantart.net/a739/th/pre/f/2014/068/8/f/black_swirl_carpet__seamless__by_marlborolt-d79jp4v.jpg');
-	background-attactment: fixed;
-	z-index: 1;
-	content: ' ';
-	
 }
 
 @media screen and (max-width: 990px) {

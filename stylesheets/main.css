@@ -8,28 +8,20 @@ a, a:hover, a:active, a:hover {
 
 /* line 1, ../sass/module/_header.scss */
 .tophead {
-  background-color: black;
+  background: url("https://pre00.deviantart.net/a739/th/pre/f/2014/068/8/f/black_swirl_carpet__seamless__by_marlborolt-d79jp4v.jpg");
+  background-attactment: fixed;
   padding: 20px 0px;
   font-size: 20px;
   color: white;
-  opacity: 0.6;
-}
-
-/* line 9, ../sass/module/_header.scss */
-.tophead:before {
-  background: url("https://pre00.deviantart.net/a739/th/pre/f/2014/068/8/f/black_swirl_carpet__seamless__by_marlborolt-d79jp4v.jpg");
-  background-attactment: fixed;
-  z-index: 1;
-  content: ' ';
 }
 
 @media screen and (max-width: 990px) {
-  /* line 18, ../sass/module/_header.scss */
+  /* line 10, ../sass/module/_header.scss */
   .text-left {
     text-align: center !important;
   }
 
-  /* line 21, ../sass/module/_header.scss */
+  /* line 13, ../sass/module/_header.scss */
   .text-right {
     text-align: center !important;
     padding: 15px 0px 0px 0px !important;
@@ -78,4 +70,9 @@ a, a:hover, a:active, a:hover {
   background-size: cover;
   height: 85vh;
   margin-top: -20px;
+}
+
+/* line 1, ../sass/module/_about.scss */
+.about {
+  height: 80vh;
 }
