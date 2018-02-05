@@ -136,7 +136,21 @@ a, a:hover, a:active, a:hover {
 .hero .heroform label {
   color: #fff;
 }
+/* line 14, ../sass/module/_hero.scss */
+.hero .heroform .btn-booknow {
+  padding-top: 25px;
+}
 
+@media only screen and (max-width: 900px) {
+  /* line 21, ../sass/module/_hero.scss */
+  .hero .heroform {
+    margin-top: 150px;
+  }
+  /* line 23, ../sass/module/_hero.scss */
+  .hero .heroform div {
+    padding-top: 10px;
+  }
+}
 /* line 1, ../sass/module/_about.scss */
 .about {
   background-color: #191919;
