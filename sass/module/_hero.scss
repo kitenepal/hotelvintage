@@ -12,8 +12,19 @@
 		label{
 			color: #fff;
 		}
+		.btn-booknow{
+			padding-top: 25px;
+		}
 }
 }
 
+@media only screen and (max-width: 900px) {
+	.hero .heroform{
+		margin-top: 150px;
+		div{
+			padding-top: 10px;
+		}
+	}
+}
 
 
