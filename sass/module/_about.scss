@@ -1,3 +1,15 @@
 .about{
-	height: 80vh;
+	background-color: $primary-color;
+	color: $secondary-color;
+	height: 80vh auto;
+	padding-bottom: 40px;
+	.img-thumbnail{
+		margin: 25px 0px !important;
+	}
+	h3{
+		font-weight: bold;
+	}
+	p{
+		color: white;
+	}
 }
