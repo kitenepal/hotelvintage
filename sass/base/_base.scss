@@ -21,6 +21,7 @@ a, a:hover, a:active, a:hover{
 	background-color: rgba(0,0,0,0);
 	transition: 0.3s;
 	font-size: 16px;
+	color: $secondary-color !important;
 	a{
 		color: $secondary-color !important;
 	}
@@ -32,7 +33,7 @@ a, a:hover, a:active, a:hover{
 }
 
 .btn-margin{
-	margin: 20px 0px;
+	margin: 40px 0px;
 }
 
 //img thumbnail

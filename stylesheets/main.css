@@ -24,29 +24,30 @@ a, a:hover, a:active, a:hover {
   background-color: transparent;
   transition: 0.3s;
   font-size: 16px;
+  color: #d8c58b !important;
 }
-/* line 24, ../sass/base/_base.scss */
+/* line 25, ../sass/base/_base.scss */
 .primarybtn a {
   color: #d8c58b !important;
 }
 
-/* line 29, ../sass/base/_base.scss */
+/* line 30, ../sass/base/_base.scss */
 .primarybtn:hover {
   color: white;
   box-shadow: 0px 0px 2px #d8c58b;
 }
 
-/* line 34, ../sass/base/_base.scss */
+/* line 35, ../sass/base/_base.scss */
 .btn-margin {
-  margin: 20px 0px;
+  margin: 40px 0px;
 }
 
-/* line 39, ../sass/base/_base.scss */
+/* line 40, ../sass/base/_base.scss */
 .img-thumbnail {
   border-radius: 0px !important;
 }
 
-/* line 44, ../sass/base/_base.scss */
+/* line 45, ../sass/base/_base.scss */
 .heading {
   font-family: "Berkshire Swash", cursive;
   margin: 40px 0px;
@@ -54,7 +55,8 @@ a, a:hover, a:active, a:hover {
 
 /* line 1, ../sass/module/_header.scss */
 .tophead {
-  background: url("http://1.bp.blogspot.com/-ahgHg2rY2Xk/UeRiOoWbGcI/AAAAAAAAPQg/LEJTvCkza1w/s1600/fiber-board-3.jpg");
+  background: url("https://ak0.picdn.net/shutterstock/videos/21703060/thumb/1.jpg");
+  background-size: cover;
   background-attactment: fixed;
   padding: 20px 0px;
   font-size: 20px;
@@ -63,12 +65,12 @@ a, a:hover, a:active, a:hover {
 }
 
 @media screen and (max-width: 990px) {
-  /* line 11, ../sass/module/_header.scss */
+  /* line 12, ../sass/module/_header.scss */
   .text-left {
     text-align: center !important;
   }
 
-  /* line 14, ../sass/module/_header.scss */
+  /* line 15, ../sass/module/_header.scss */
   .text-right {
     text-align: center !important;
     padding: 15px 0px 0px 0px !important;
@@ -133,14 +135,13 @@ a, a:hover, a:active, a:hover {
   background: url("https://i.ytimg.com/vi/09pDca1mITM/maxresdefault.jpg");
   background-size: cover;
   background-attachment: fixed;
-  height: 85vh;
   margin-top: -20px;
 }
 /* line 7, ../sass/module/_hero.scss */
 .hero .heroform {
   background-color: rgba(0, 0, 0, 0.7);
   position: relative;
-  margin-top: 400px;
+  margin: 440px 0 20px 0;
   padding: 20px;
 }
 /* line 12, ../sass/module/_hero.scss */
@@ -180,6 +181,36 @@ a, a:hover, a:active, a:hover {
 /* line 12, ../sass/module/_about.scss */
 .about p {
   color: white;
+}
+
+/* line 1, ../sass/module/_service.scss */
+.service {
+  background-color: #191919;
+  color: #d8c58b;
+}
+/* line 4, ../sass/module/_service.scss */
+.service--box {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  margin: 20px 0px;
+}
+/* line 9, ../sass/module/_service.scss */
+.service--box i {
+  font-size: 48px;
+}
+
+/* line 1, ../sass/module/_contact.scss */
+.contact {
+  background: url("https://ak0.picdn.net/shutterstock/videos/21703060/thumb/1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  padding-bottom: 40px;
+}
+/* line 7, ../sass/module/_contact.scss */
+.contact iframe {
+  margin: 20px 0px;
 }
 
 /* line 1, ../sass/module/_room.scss */
@@ -299,19 +330,45 @@ a, a:hover, a:active, a:hover {
     font-size: 1em;
   }
 }
-/* line 1, ../sass/module/_service.scss */
-.service {
+
+
+/* line 1, ../sass/module/_footer.scss */
+footer {
   background-color: #191919;
   color: #d8c58b;
 }
-/* line 4, ../sass/module/_service.scss */
-.service--box {
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 30px;
-  margin: 20px 0px;
+/* line 4, ../sass/module/_footer.scss */
+footer a {
+  color: #d8c58b;
+  transition: 0.3s;
 }
-/* line 9, ../sass/module/_service.scss */
-.service--box i {
-  font-size: 48px;
+/* line 8, ../sass/module/_footer.scss */
+footer a:hover, footer a:active, footer a:focus {
+  color: white;
+  text-decoration: none;
 }
+/* line 12, ../sass/module/_footer.scss */
+footer h3 {
+  font-weight: bold;
+}
+/* line 15, ../sass/module/_footer.scss */
+footer ul {
+  list-style-type: none;
+  padding-left: 0px;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 18px;
+}
+/* line 21, ../sass/module/_footer.scss */
+footer ol {
+  list-style-type: none;
+  padding-left: 10px;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 18px;
+}
+
+/* line 29, ../sass/module/_footer.scss */
+.copyright {
+  background-color: #0a0a0a;
+  padding: 10px 0px;
+}
+>>>>>>> 9e3fc21e519109a8d031e66927d73f050598ee4d
