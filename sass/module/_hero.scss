@@ -4,9 +4,16 @@
 	background-attachment: fixed;
 	height: 85vh;
 	margin-top: -20px;
+	.heroform{
+		background-color: rgba(0,0,0,0.7);
+		position: relative;
+		margin-top: 400px;
+		padding: 20px;
+		label{
+			color: #fff;
+		}
+}
 }
 
 
-.heroform{
-	
-}
+
