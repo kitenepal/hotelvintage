@@ -134,7 +134,6 @@ a, a:hover, a:active, a:hover {
   background: url("https://i.ytimg.com/vi/09pDca1mITM/maxresdefault.jpg");
   background-size: cover;
   background-attachment: fixed;
-  height: 85vh auto;
   margin-top: -20px;
 }
 /* line 7, ../sass/module/_hero.scss */
@@ -300,4 +299,44 @@ a, a:hover, a:active, a:hover {
 /* line 72, ../sass/module/_room.scss */
 .tab-panel {
   border-top: 1px solid #ccc;
+}
+
+/* line 1, ../sass/module/_footer.scss */
+footer {
+  background-color: #191919;
+  color: #d8c58b;
+}
+/* line 4, ../sass/module/_footer.scss */
+footer a {
+  color: #d8c58b;
+  transition: 0.3s;
+}
+/* line 8, ../sass/module/_footer.scss */
+footer a:hover, footer a:active, footer a:focus {
+  color: white;
+  text-decoration: none;
+}
+/* line 12, ../sass/module/_footer.scss */
+footer h3 {
+  font-weight: bold;
+}
+/* line 15, ../sass/module/_footer.scss */
+footer ul {
+  list-style-type: none;
+  padding-left: 0px;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 18px;
+}
+/* line 21, ../sass/module/_footer.scss */
+footer ol {
+  list-style-type: none;
+  padding-left: 10px;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 18px;
+}
+
+/* line 29, ../sass/module/_footer.scss */
+.copyright {
+  background-color: #0a0a0a;
+  padding: 10px 0px;
 }

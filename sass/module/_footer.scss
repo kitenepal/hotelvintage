@@ -1,0 +1,32 @@
+footer{
+	background-color: $primary-color;
+	color: $secondary-color;
+	a{
+		color: $secondary-color;
+		transition: 0.3s;
+	}
+	a:hover, a:active, a:focus{
+		color: white;
+		text-decoration: none;
+	}
+	h3{
+		font-weight: bold;
+	}
+	ul{
+		list-style-type: none;
+		padding-left: 0px;
+		font-family: $paragraph-font;
+		font-size: 18px;
+	}
+	ol{
+		list-style-type: none;
+		padding-left: 10px;
+		font-family: $paragraph-font;
+		font-size: 18px;
+	}
+}
+
+.copyright{
+	background-color: $dark-primary;
+	padding: 10px 0px;
+}
