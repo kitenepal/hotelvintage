@@ -25,19 +25,28 @@ a, a:hover, a:active, a:hover {
   transition: 0.3s;
   font-size: 16px;
 }
+/* line 24, ../sass/base/_base.scss */
+.primarybtn a {
+  color: #d8c58b !important;
+}
 
-/* line 26, ../sass/base/_base.scss */
+/* line 29, ../sass/base/_base.scss */
 .primarybtn:hover {
   color: white;
   box-shadow: 0px 0px 2px #d8c58b;
 }
 
-/* line 32, ../sass/base/_base.scss */
+/* line 34, ../sass/base/_base.scss */
+.btn-margin {
+  margin: 20px 0px;
+}
+
+/* line 39, ../sass/base/_base.scss */
 .img-thumbnail {
   border-radius: 0px !important;
 }
 
-/* line 37, ../sass/base/_base.scss */
+/* line 44, ../sass/base/_base.scss */
 .heading {
   font-family: "Berkshire Swash", cursive;
   margin: 40px 0px;
@@ -49,16 +58,17 @@ a, a:hover, a:active, a:hover {
   background-attactment: fixed;
   padding: 20px 0px;
   font-size: 20px;
-  color: #191919;
+  color: white;
+  text-shadow: 0px 0px 3px #191919;
 }
 
 @media screen and (max-width: 990px) {
-  /* line 10, ../sass/module/_header.scss */
+  /* line 11, ../sass/module/_header.scss */
   .text-left {
     text-align: center !important;
   }
 
-  /* line 13, ../sass/module/_header.scss */
+  /* line 14, ../sass/module/_header.scss */
   .text-right {
     text-align: center !important;
     padding: 15px 0px 0px 0px !important;
@@ -122,6 +132,7 @@ a, a:hover, a:active, a:hover {
 .hero {
   background: url("https://i.ytimg.com/vi/09pDca1mITM/maxresdefault.jpg");
   background-size: cover;
+  background-attachment: fixed;
   height: 85vh;
   margin-top: -20px;
 }
@@ -144,4 +155,21 @@ a, a:hover, a:active, a:hover {
 /* line 12, ../sass/module/_about.scss */
 .about p {
   color: white;
+}
+
+/* line 1, ../sass/module/_service.scss */
+.service {
+  background-color: #191919;
+  color: #d8c58b;
+}
+/* line 4, ../sass/module/_service.scss */
+.service--box {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  margin: 20px 0px;
+}
+/* line 9, ../sass/module/_service.scss */
+.service--box i {
+  font-size: 48px;
 }
