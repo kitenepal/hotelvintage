@@ -71,6 +71,17 @@ a, a:hover, a:active, a:hover {
   height: 85vh;
   margin-top: -20px;
 }
+/* line 6, ../sass/module/_hero.scss */
+.hero .heroform {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  margin-top: 400px;
+  padding: 20px;
+}
+/* line 11, ../sass/module/_hero.scss */
+.hero .heroform label {
+  color: #fff;
+}
 
 /* line 1, ../sass/module/_about.scss */
 .about {
