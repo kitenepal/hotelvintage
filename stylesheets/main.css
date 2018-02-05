@@ -1,4 +1,15 @@
-/* line 1, ../sass/base/_base.scss */
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Didact+Gothic&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext");
+/* line 2, ../sass/base/_base.scss */
+body a, body p, body h3, body button {
+  font-family: "Didact Gothic", sans-serif;
+}
+/* line 5, ../sass/base/_base.scss */
+body a, body p {
+  font-size: 18px;
+}
+
+/* line 10, ../sass/base/_base.scss */
 a, a:hover, a:active, a:hover {
   outline: 0;
   text-decoration: none;
@@ -6,13 +17,39 @@ a, a:hover, a:active, a:hover {
   transition-timing-function: ease-in-out;
 }
 
+/* line 18, ../sass/base/_base.scss */
+.primarybtn {
+  padding: 3px 15px;
+  border: 2px solid #d8c58b;
+  background-color: transparent;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+/* line 26, ../sass/base/_base.scss */
+.primarybtn:hover {
+  color: white;
+  box-shadow: 0px 0px 2px #d8c58b;
+}
+
+/* line 32, ../sass/base/_base.scss */
+.img-thumbnail {
+  border-radius: 0px !important;
+}
+
+/* line 37, ../sass/base/_base.scss */
+.heading {
+  font-family: "Berkshire Swash", cursive;
+  margin: 40px 0px;
+}
+
 /* line 1, ../sass/module/_header.scss */
 .tophead {
-  background: url("https://pre00.deviantart.net/a739/th/pre/f/2014/068/8/f/black_swirl_carpet__seamless__by_marlborolt-d79jp4v.jpg");
+  background: url("http://1.bp.blogspot.com/-ahgHg2rY2Xk/UeRiOoWbGcI/AAAAAAAAPQg/LEJTvCkza1w/s1600/fiber-board-3.jpg");
   background-attactment: fixed;
   padding: 20px 0px;
   font-size: 20px;
-  color: white;
+  color: #191919;
 }
 
 @media screen and (max-width: 990px) {
@@ -34,32 +71,49 @@ a, a:hover, a:active, a:hover {
   border-bottom: 1px solid #d8c58b !important;
 }
 /* line 5, ../sass/module/_navbar.scss */
+.navbar a {
+  color: white !important;
+}
+/* line 9, ../sass/module/_navbar.scss */
 .navbar ul a:hover, .navbar ul a:active, .navbar ul a:focus {
   color: #d8c58b !important;
   text-shadow: 0px 0px 15px #d8c58b;
 }
+/* line 14, ../sass/module/_navbar.scss */
+.navbar .dropdown-menu {
+  background-color: #191919 !important;
+}
+/* line 16, ../sass/module/_navbar.scss */
+.navbar .dropdown-menu a:hover {
+  background-color: #191919;
+}
 
-/* line 13, ../sass/module/_navbar.scss */
+/* line 22, ../sass/module/_navbar.scss */
 .navbar-header {
   margin-left: 15px;
 }
-/* line 15, ../sass/module/_navbar.scss */
+/* line 24, ../sass/module/_navbar.scss */
+.navbar-header a {
+  font-family: "Berkshire Swash", cursive !important;
+  font-size: 20px !important;
+}
+/* line 28, ../sass/module/_navbar.scss */
 .navbar-header a:hover, .navbar-header a:active, .navbar-header a:focus {
   color: #d8c58b !important;
   text-shadow: 0px 0px 15px #d8c58b;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 24, ../sass/module/_navbar.scss */
+  /* line 37, ../sass/module/_navbar.scss */
   .navbar ul a:hover, .navbar ul a:active, .navbar ul a:focus {
     border: 0px;
   }
 
-  /* line 29, ../sass/module/_navbar.scss */
+  /* line 42, ../sass/module/_navbar.scss */
   .navbar-header {
     margin-left: 0px;
   }
-  /* line 31, ../sass/module/_navbar.scss */
+  /* line 44, ../sass/module/_navbar.scss */
   .navbar-header a:hover, .navbar-header a:active, .navbar-header a:focus {
     color: #d8c58b !important;
   }
@@ -85,5 +139,20 @@ a, a:hover, a:active, a:hover {
 
 /* line 1, ../sass/module/_about.scss */
 .about {
-  height: 80vh;
+  background-color: #191919;
+  color: #d8c58b;
+  height: 80vh auto;
+  padding-bottom: 40px;
+}
+/* line 6, ../sass/module/_about.scss */
+.about .img-thumbnail {
+  margin: 25px 0px !important;
+}
+/* line 9, ../sass/module/_about.scss */
+.about h3 {
+  font-weight: bold;
+}
+/* line 12, ../sass/module/_about.scss */
+.about p {
+  color: white;
 }

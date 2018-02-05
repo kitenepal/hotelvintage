@@ -1,17 +1,30 @@
 .navbar{
 	border-radius: 0px !important;
 	background-color:  $primary-color !important;
+	border-bottom: 1px solid $secondary-color !important;
+	a{
+		color: white !important;
+	}
 	ul{
 		a:hover, a:active, a:focus{
 			color: $secondary-color !important;
 			text-shadow: 0px 0px 15px $secondary-color;
 		}
 	}
-	border-bottom: 1px solid $secondary-color !important;
+	.dropdown-menu{
+		background-color: $primary-color !important;
+		a:hover{
+			background-color: $primary-color;
+		}
+	}
 }
 
 .navbar-header{
 	margin-left: 15px;
+	a{
+		font-family: $heading-font !important;
+		font-size: 20px !important; 
+	}
 	a:hover, a:active, a:focus{
 		color: $secondary-color !important;
 		text-shadow: 0px 0px 15px $secondary-color;
