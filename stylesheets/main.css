@@ -134,7 +134,7 @@ a, a:hover, a:active, a:hover {
   background: url("https://i.ytimg.com/vi/09pDca1mITM/maxresdefault.jpg");
   background-size: cover;
   background-attachment: fixed;
-  height: 85vh;
+  height: 85vh auto;
   margin-top: -20px;
 }
 /* line 7, ../sass/module/_hero.scss */
