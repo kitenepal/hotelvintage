@@ -45,7 +45,7 @@ a, a:hover, a:active, a:hover {
 /* line 39, ../sass/base/_base.scss */
 .booknow {
   padding: 3px 15px 4px 15px;
-  border: 2px solid white;
+  border: 2px solid #d8c58b;
   transition: 0.3s ease-in-out;
   font-size: 16px;
   color: white !important;
