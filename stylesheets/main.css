@@ -19,10 +19,10 @@ a, a:hover, a:active, a:hover {
 
 /* line 18, ../sass/base/_base.scss */
 .primarybtn {
-  padding: 3px 15px;
+  padding: 3px 15px 4px 15px;
   border: 2px solid #d8c58b;
   background-color: transparent;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
   font-size: 16px;
   color: #d8c58b !important;
 }
@@ -42,12 +42,43 @@ a, a:hover, a:active, a:hover {
   margin: 40px 0px;
 }
 
-/* line 40, ../sass/base/_base.scss */
+/* line 39, ../sass/base/_base.scss */
+.booknow {
+  padding: 3px 15px 4px 15px;
+  border: 2px solid white;
+  transition: 0.3s ease-in-out;
+  font-size: 16px;
+  color: white !important;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#510505+0,cf0404+100 */
+  background: #510505;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #510505 0%, #cf0404 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #510505 0%, #cf0404 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #510505 0%, #cf0404 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#510505', endColorstr='#cf0404',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+/* line 45, ../sass/base/_base.scss */
+.booknow a {
+  color: #d8c58b !important;
+}
+
+/* line 55, ../sass/base/_base.scss */
+.booknow:hover {
+  border: 2px solid #d8c58b;
+  box-shadow: 0px 0px 5px white;
+  color: #d8c58b !important;
+}
+
+/* line 62, ../sass/base/_base.scss */
 .img-thumbnail {
   border-radius: 0px !important;
 }
 
-/* line 45, ../sass/base/_base.scss */
+/* line 67, ../sass/base/_base.scss */
 .heading {
   font-family: "Berkshire Swash", cursive;
   margin: 40px 0px;
@@ -215,11 +246,23 @@ a, a:hover, a:active, a:hover {
 
 /* line 1, ../sass/module/_room.scss */
 .rooms {
-  margin-top: 10px;
-  margin-bottom: 30px;
+  background: url("https://image.freepik.com/free-photo/blurred-hotel-reception_1203-2099.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  font-family: "Didact Gothic", sans-serif;
+}
+/* line 8, ../sass/module/_room.scss */
+.rooms li {
+  font-size: 18px;
+}
+/* line 11, ../sass/module/_room.scss */
+.rooms h3 {
+  font-weight: bold;
 }
 
-/* line 6, ../sass/module/_room.scss */
+/* line 16, ../sass/module/_room.scss */
 .room-info {
   margin-top: 20px;
 }
@@ -227,20 +270,19 @@ a, a:hover, a:active, a:hover {
 /*
  CSS for the main interaction
 */
-/* line 12, ../sass/module/_room.scss */
+/* line 22, ../sass/module/_room.scss */
 .tabset > input[type="radio"] {
   position: absolute;
   left: -200vw;
 }
 
-/* line 17, ../sass/module/_room.scss */
+/* line 27, ../sass/module/_room.scss */
 .tabset .tab-panel {
   display: none;
-  background: #d8c58b;
   padding-bottom: 20px;
 }
 
-/* line 23, ../sass/module/_room.scss */
+/* line 33, ../sass/module/_room.scss */
 .tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
 .tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
 .tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
@@ -253,7 +295,12 @@ a, a:hover, a:active, a:hover {
 /*
  Styling
 */
-/* line 36, ../sass/module/_room.scss */
+/* line 46, ../sass/module/_room.scss */
+.tabset label {
+  transition: 0.3s ease-in-out;
+}
+
+/* line 51, ../sass/module/_room.scss */
 .tabset > label {
   position: relative;
   display: inline-block;
@@ -266,7 +313,7 @@ a, a:hover, a:active, a:hover {
   border-top-right-radius: 5px;
 }
 
-/* line 48, ../sass/module/_room.scss */
+/* line 63, ../sass/module/_room.scss */
 .tabset > label::after {
   content: "";
   position: absolute;
@@ -275,63 +322,62 @@ a, a:hover, a:active, a:hover {
   width: 22px;
   height: 4px;
   background: #8d8d8d;
+  transition: 0.3s ease-in-out;
 }
 
-/* line 58, ../sass/module/_room.scss */
-.tabset > label:hover,
+/* line 74, ../sass/module/_room.scss */
+.tabset > label:hover, label:active,
 .tabset > input:focus + label {
-  color: #d8c58b;
+  color: red;
 }
 
-/* line 63, ../sass/module/_room.scss */
+/* line 79, ../sass/module/_room.scss */
 .tabset > label:hover::after,
 .tabset > input:focus + label::after,
 .tabset > input:checked + label::after {
-  background: #d8c58b;
+  background: red;
 }
 
-/* line 69, ../sass/module/_room.scss */
+/* line 85, ../sass/module/_room.scss */
 .tabset > input:checked + label {
   border-color: #ccc;
   border-bottom: 1px solid #fff;
   margin-bottom: -1px;
 }
 
-/* line 74, ../sass/module/_room.scss */
+/* line 90, ../sass/module/_room.scss */
 .tab-panel {
   margin-top: -5px;
 }
 
-/* line 77, ../sass/module/_room.scss */
+/* line 93, ../sass/module/_room.scss */
 .tab-panel {
   border-top: 1px solid #ccc;
 }
 
 @media screen and (max-width: 990px) {
-  /* line 81, ../sass/module/_room.scss */
+  /* line 97, ../sass/module/_room.scss */
   .tabset > label {
     padding: 15px 5px 20px;
   }
 }
 @media screen and (max-width: 715px) {
-  /* line 87, ../sass/module/_room.scss */
+  /* line 103, ../sass/module/_room.scss */
   .tabset > label {
     font-size: .8em;
   }
 }
 @media screen and (max-width: 590px) {
-  /* line 92, ../sass/module/_room.scss */
+  /* line 108, ../sass/module/_room.scss */
   .tabset > label::after {
     left: 9px;
   }
 
-  /* line 95, ../sass/module/_room.scss */
+  /* line 111, ../sass/module/_room.scss */
   .tabset > label {
     font-size: 1em;
   }
 }
-
-
 /* line 1, ../sass/module/_footer.scss */
 footer {
   background-color: #191919;
@@ -371,4 +417,3 @@ footer ol {
   background-color: #0a0a0a;
   padding: 10px 0px;
 }
->>>>>>> 9e3fc21e519109a8d031e66927d73f050598ee4d

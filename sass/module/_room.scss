@@ -1,6 +1,16 @@
 .rooms{
-  margin-top: 10px;
-  margin-bottom: 30px;
+  background: url('https://image.freepik.com/free-photo/blurred-hotel-reception_1203-2099.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  font-family: $paragraph-font;
+  li{
+    font-size: 18px;
+  }
+  h3{
+    font-weight: bold;
+  }
 }
 
 .room-info{
@@ -16,7 +26,7 @@
 
 .tabset .tab-panel {
   display: none;
-  background: #d8c58b;
+  // background: #d8c58b;
   padding-bottom: 20px;
 }
 
@@ -32,6 +42,11 @@
 /*
  Styling
 */
+.tabset{
+  label{
+    transition: 0.3s ease-in-out;
+  }
+}
 
 .tabset > label {
   position: relative;
@@ -53,17 +68,18 @@
   width: 22px;
   height: 4px;
   background: #8d8d8d;
+  transition: 0.3s ease-in-out; 
 }
 
-.tabset > label:hover,
+.tabset > label:hover, label:active,
 .tabset > input:focus + label {
-  color: #d8c58b;
+  color: red;
 }
 
 .tabset > label:hover::after,
 .tabset > input:focus + label::after,
 .tabset > input:checked + label::after {
-  background: #d8c58b;
+  background: red;
 }
 
 .tabset > input:checked + label {

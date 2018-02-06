@@ -16,10 +16,10 @@ a, a:hover, a:active, a:hover{
 
 //buttons
 .primarybtn{
-	padding: 3px 15px;
+	padding: 3px 15px 4px 15px;
 	border: 2px solid $secondary-color;
 	background-color: rgba(0,0,0,0);
-	transition: 0.3s;
+	transition: 0.3s ease-in-out;
 	font-size: 16px;
 	color: $secondary-color !important;
 	a{
@@ -34,6 +34,28 @@ a, a:hover, a:active, a:hover{
 
 .btn-margin{
 	margin: 40px 0px;
+}
+
+.booknow{
+	padding: 3px 15px 4px 15px;
+	border: 2px solid white;
+	transition: 0.3s ease-in-out;
+	font-size: 16px;
+	color: white !important;
+	a{
+		color: $secondary-color !important;
+	}
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#510505+0,cf0404+100 */
+  background: rgb(81,5,5); /* Old browsers */
+  background: -moz-linear-gradient(45deg, rgba(81,5,5,1) 0%, rgba(207,4,4,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(81,5,5,1) 0%,rgba(207,4,4,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(81,5,5,1) 0%,rgba(207,4,4,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#510505', endColorstr='#cf0404',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ 
+}
+.booknow:hover{
+	border: 2px solid $secondary-color;
+	box-shadow: 0px 0px 5px white;
+	color: $secondary-color !important;
 }
 
 //img thumbnail
