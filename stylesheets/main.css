@@ -341,39 +341,38 @@ a, a:hover, a:active, a:hover {
 /* line 85, ../sass/module/_room.scss */
 .tabset > input:checked + label {
   border-color: #ccc;
-  border-bottom: 1px solid #fff;
   margin-bottom: -1px;
 }
 
-/* line 90, ../sass/module/_room.scss */
+/* line 89, ../sass/module/_room.scss */
 .tab-panel {
   margin-top: -5px;
 }
 
-/* line 93, ../sass/module/_room.scss */
+/* line 92, ../sass/module/_room.scss */
 .tab-panel {
   border-top: 1px solid #ccc;
 }
 
 @media screen and (max-width: 990px) {
-  /* line 97, ../sass/module/_room.scss */
+  /* line 96, ../sass/module/_room.scss */
   .tabset > label {
     padding: 15px 5px 20px;
   }
 }
 @media screen and (max-width: 715px) {
-  /* line 103, ../sass/module/_room.scss */
+  /* line 102, ../sass/module/_room.scss */
   .tabset > label {
     font-size: .8em;
   }
 }
 @media screen and (max-width: 590px) {
-  /* line 108, ../sass/module/_room.scss */
+  /* line 107, ../sass/module/_room.scss */
   .tabset > label::after {
     left: 9px;
   }
 
-  /* line 111, ../sass/module/_room.scss */
+  /* line 110, ../sass/module/_room.scss */
   .tabset > label {
     font-size: 1em;
   }
